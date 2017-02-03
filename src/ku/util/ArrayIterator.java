@@ -4,16 +4,16 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * Class for ArrayIterator to iterate array .
+ * Class for ArrayIterator to iterate array.
  * 
  * @author Jirayu Laungwilawan
- *
- * @param <T>
+ * @version 2.2.17
+ * @param <T> revice typr of array iterator.
  */
 public class ArrayIterator<T> implements Iterator<T> {
-	/** attribute for the array we want to iterate over */
+	/** attribute for the array we want to iterate over. */
 	private T[] array;
-	/** Point the position of array */
+	/** Point the position of array. */
 	private int pointer;
 
 	/**
@@ -21,7 +21,7 @@ public class ArrayIterator<T> implements Iterator<T> {
 	 * to zero.
 	 * 
 	 * @param array
-	 *            is the array to iterate over
+	 *            is the array to iterate over.
 	 */
 	public ArrayIterator(T[] array) {
 		this.array = array;
@@ -42,8 +42,6 @@ public class ArrayIterator<T> implements Iterator<T> {
 			throw new NoSuchElementException();
 		}
 	}
-	// TODO the other methods don't use the type parameter,
-	// so you should have no problem writing them.
 
 	/**
 	 * Return true if the next array has value, skip if it's null and return
